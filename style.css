@@ -1,45 +1,43 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* এটা না থাকায় সবুজ দাগ বাইরে বের হয়ে যাচ্ছিল */
 }
 
 body{
     background-color: gray;
 }
 
-
 .con{
-    max-width: 400px;
+    max-width: 800px; /* তুমি 400px দিছিলা তাই চিকন দেখাচ্ছিল, 800px করে দিলাম */
+    width: 95%;
     background-color: pink;
     margin: 0 auto;
-    
-    
-    
+    padding: 20px;
 }
+
 .img1{
     height: 80px;
-    width: 50px;
-    border-radius: 35px;
+    width: 80px; /* 50px ছিল তাই ছবি চ্যাপ্টা হচ্ছিল */
+    border-radius: 50%;
     float: left;
-    margin-top: 10px;
+    margin-right: 15px;
+    margin-top: 0;
 }
+
 .profile{
     color: blueviolet;
-    padding: 15px;
+    padding: 10px 0;
     float: left;
-    
-}
-
-h1,h2,h3,h4,h5{
-
-    
+    width: 50%;
 }
 
 .info{
     float: right;
-    text-align: center;
+    width: 50%;
+    text-align: right; /* center ছিল তাই লেখা মাঝে চলে গেছিল */
     font-size: 14px;
-  
+    padding-top: 10px;
 }
 
 .info a{
@@ -51,7 +49,6 @@ h1,h2,h3,h4,h5{
 .info a:hover{
     background-color: greenyellow;
     text-decoration: underline;
-    
 }
 
 .divcl{
@@ -61,30 +58,28 @@ h1,h2,h3,h4,h5{
 hr{
     border: 3px greenyellow solid;
     width: 100%;
-    
+    margin: 15px 0;
 }
 
 #personal{
     padding-top: 10px;
-    
+    overflow: hidden; /* float ঠিক করার জন্য */
 }
 
 .left{
-    width: 10%;
+    width: 30%; /* 10% অনেক ছোট ছিল তাই লেখা ভেঙে যাচ্ছিল */
     float: left;
-    
 }
 
 .right{
-    
     width: 70%;
-    float: right;
-    padding-bottom: 10px;
-   
+    float: left; /* right না, left দিলে গ্যাপ থাকবে না */
+    padding-bottom: 15px;
+    text-align: justify;
 }
 
 .rui{
-    padding-top: 70px;
+    padding-top: 20px;
 }
 
 .choto{
@@ -98,16 +93,13 @@ footer{
     text-align: center;
     padding-top: 40px;
     font-size: 20px;
+    clear: both;
 }
 
 footer a{
     color: red;
     text-decoration: none;
 }
-
-
-
-
 
 
 
