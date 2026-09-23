@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* এটা না থাকায় সবুজ দাগ বাইরে বের হয়ে যাচ্ছিল */
+    box-sizing: border-box;
 }
 
 body{
@@ -14,15 +14,16 @@ body{
     background-color: pink;
     margin: 0 auto;
     padding: 20px;
-    min-height: 100vh; /* এটা যোগ করো */
+    min-height: 100vh;
 }
+
 .img1{
-    height: 60px;
-    width: 60px;
+    height: 55px !important;
+    width: 55px !important;
     border-radius: 50%;
     float: left;
     margin-right: 15px;
-    margin-top: 0;
+    object-fit: cover;
 }
 
 .profile{
@@ -35,9 +36,9 @@ body{
 .info{
     float: right;
     width: 50%;
-    text-align: right; /* center ছিল তাই লেখা মাঝে চলে গেছিল */
+    text-align: right;
     font-size: 14px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .info a{
@@ -63,17 +64,17 @@ hr{
 
 #personal{
     padding-top: 10px;
-    overflow: hidden; /* float ঠিক করার জন্য */
+    overflow: hidden;
 }
 
 .left{
-    width: 30%; /* 10% অনেক ছোট ছিল তাই লেখা ভেঙে যাচ্ছিল */
+    width: 30%;
     float: left;
 }
 
 .right{
     width: 70%;
-    float: left; /* right না, left দিলে গ্যাপ থাকবে না */
+    float: left;
     padding-bottom: 15px;
     text-align: justify;
 }
@@ -100,14 +101,6 @@ footer a{
     color: red;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
 
 
 
