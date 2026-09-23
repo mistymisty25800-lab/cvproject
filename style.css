@@ -9,11 +9,13 @@ body{
 }
 
 .con{
-    max-width: 800px; /* তুমি 400px দিছিলা তাই চিকন দেখাচ্ছিল, 800px করে দিলাম */
+    max-width: 800px;
     width: 95%;
     background-color: pink;
     margin: 0 auto;
     padding: 20px;
+    min-height: 100vh; /* এটা যোগ করো */
+}
 }
 
 .img1{
